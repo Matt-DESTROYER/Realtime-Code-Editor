@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<title>Code Editor</title>
 		
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
 		<link rel="stylesheet" href="styles.css">
 		<script type="text/javascript" src="updateRealtime.js" defer></script>
 		<script type="text/javascript" src="buttonFunctions.js" defer></script>
@@ -16,12 +17,13 @@
 		
 		<div class="code-area">
 			<button onClick="save();" style="height: 30px;">Save</button>
+			<button id="autosave" onClick="autosave();" style="height: 30px;">Auto-preview On</button>
 			<textarea id="html" placeholder="HTML Body" 
-            oninput="showPreview()"></textarea>
+            oninput="preview()"></textarea>
 			<textarea id="css" placeholder="CSS" 
-            oninput="showPreview()"></textarea>
+            oninput="preview()"></textarea>
 			<textarea id="javascript" placeholder="JavaScript" 
-            oninput="showPreview()"></textarea>	
+            oninput="preview()"></textarea>	
 		</div>
 		
 		<div class="preview-area">
