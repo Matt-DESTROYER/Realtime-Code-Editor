@@ -34,3 +34,24 @@ body {
 	height: 100%;
 	border: none;
 }
+
+.button {
+	display: inline-block;
+	padding: 5px 9px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+}
+
+.button:hover {
+	background-color: #3e8e41;
+}
+
+.button:active {
+	background-color: #3e8e41;
+}
