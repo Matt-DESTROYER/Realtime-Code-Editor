@@ -1,4 +1,29 @@
-﻿function save() {
+// Initialise
+let auto = 0;
+
+// Turn autosave on/off
+function autosave() {
+	let button = document.getElementById("autosave");
+	let html = document.getElementById("html");
+	let css =  document.getElementById("css");
+	let javascript =  document.getElementById("javascript");
+	if (auto === 0) {
+		auto++;
+		button.innerHTML = "Auto-preview Off";
+		html.oninput = "";
+		css.oninput = "";
+		javascript.oninput = "";
+	} else {
+		auto--;
+		button.innerHTML = "Auto-preview On";
+		html.oninput = "preview();";
+		css.oninput = "preview();";
+		javascript.oninput = "preview();";
+	}
+}
+
+// Save the code as index.html
+function save() {
 	// Create file contents
 	let head = "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title></head>";
 	let html = document.getElementById("html").value;
