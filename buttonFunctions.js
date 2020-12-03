@@ -8,17 +8,17 @@ function autosave() {
 	let css =  document.getElementById("css");
 	let javascript =  document.getElementById("javascript");
 	if (auto === 0) {
-		auto++;
+		auto = 1;
 		button.innerHTML = "Auto-preview Off";
 		html.oninput = "";
 		css.oninput = "";
 		javascript.oninput = "";
-	} else {
-		auto--;
+	} else if (auto === 1) {
+		auto = 0;
 		button.innerHTML = "Auto-preview On";
-		html.oninput = "preview();";
-		css.oninput = "preview();";
-		javascript.oninput = "preview();";
+		html.oninput = preview();
+		css.oninput = preview();
+		javascript.oninput = preview();
 	}
 }
 
