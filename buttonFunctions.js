@@ -24,13 +24,11 @@ function autosave() {
 
 // Save the code as index.html
 function save() {
-	// Create file contents
-	let head = "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title></head>";
+	// Create file data
 	let html = document.getElementById("html").value;
 	let css = "<style>" + document.getElementById("css").value + "</style>";
 	let javascript = "<scri" + "pt>" + document.getElementById("javascript").value + "</scri" + "pt>";
-	let foot = "</body></html>";
-	let file =  head + css + "<body>" + html + javascript + foot;
+	let file =  "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title>" + css + "</head><body>" + html + "</body>" + javascript + "</html>";
 	
 	// Download file
 	let element = document.createElement('a');
