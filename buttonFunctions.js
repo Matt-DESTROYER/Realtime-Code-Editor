@@ -26,9 +26,9 @@ function autosave() {
 function save() {
 	// Create file data
 	let html = document.getElementById("html").value;
-	let css = "<style>" + document.getElementById("css").value + "</style>";
-	let javascript = "<scri" + "pt>" + document.getElementById("javascript").value + "</scri" + "pt>";
-	let file =  "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title>" + css + "</head><body>" + html + "</body>" + javascript + "</html>";
+	let css = document.getElementById("css").value;
+	let javascript = document.getElementById("javascript").value;
+	let file =  "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title><style>" + css + "</style></head><body>" + html + "</body><script>" + javascript + "</script></html>";
 	
 	// Download file
 	let element = document.createElement('a');
