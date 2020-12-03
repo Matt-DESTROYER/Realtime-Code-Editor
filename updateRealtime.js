@@ -1,4 +1,5 @@
-function showPreview() {
+// Update preview
+function preview() {
 	let html = document.getElementById("html").value;
 	let css = "<style>" + document.getElementById("css").value + "</style>";
 	let javascript = "<scri" + "pt>" + document.getElementById("javascript").value + "</scri" + "pt>";
