@@ -1,21 +1,20 @@
 <!doctype html>
 <html>
-	
 	<head>
-		
 		<meta charset="utf-8">
-		<title>Code Editor</title>
+		<title>Realtime Code Editor</title>
 		
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 		
-		<link rel="stylesheet" href="styles.css">
+		<!-- Files required -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="updateRealtime.js" defer></script>
 		<script type="text/javascript" src="buttonFunctions.js" defer></script>
-	
 	</head>
 
 	<body>
-		
+		<!-- Editor parts -->
 		<div class="code-area">
 			<button class="button" onClick="save();" style="height: 30px;">Save</button>
 			<button class="button" id="autosave" onClick="autosave();" style="height: 30px;">Auto-preview On</button>
@@ -30,7 +29,5 @@
 		<div class="preview-area">
 			<iframe id="preview-window"></iframe>
 		</div>
-		
 	</body>
-	
 </html>
