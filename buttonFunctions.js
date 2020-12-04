@@ -1,12 +1,15 @@
 // Initialise
 let auto = 0;
+function get(id) {
+	return document.getElementById(id);
+}
 
 // Turn autosave on/off
 function autosave() {
-	let button = document.getElementById("autosave");
-	let html = document.getElementById("html");
-	let css =  document.getElementById("css");
-	let javascript =  document.getElementById("javascript");
+	let button = get("autosave");
+	let html = get("html");
+	let css =  get("css");
+	let javascript = get("javascript");
 	if (auto === 0) {
 		auto = 1;
 		button.innerHTML = "Auto-preview Off";
@@ -19,15 +22,16 @@ function autosave() {
 		html.oninput = preview();
 		css.oninput = preview();
 		javascript.oninput = preview();
+		preview();
 	}
 }
 
 // Save the code as index.html
 function save() {
 	// Create file data
-	let html = document.getElementById("html").value;
-	let css = document.getElementById("css").value;
-	let javascript = document.getElementById("javascript").value;
+	let html = get("html").value;
+	let css = get("css").value;
+	let javascript = get("javascript").value;
 	let file =  "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title><style>" + css + "</style></head><body>" + html + "</body><script>" + javascript + "</script></html>";
 	
 	// Download file
