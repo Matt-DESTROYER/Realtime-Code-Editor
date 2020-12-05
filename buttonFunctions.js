@@ -22,8 +22,8 @@ function autosave() {
 		html.oninput = preview();
 		css.oninput = preview();
 		javascript.oninput = preview();
-		preview();
 	}
+	preview();
 }
 
 // Save the code as index.html
