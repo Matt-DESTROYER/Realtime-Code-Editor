@@ -7,21 +7,12 @@ function get(id) {
 // Turn autosave on/off
 function autosave() {
 	let button = get("autosave");
-	let html = get("html");
-	let css =  get("css");
-	let javascript = get("javascript");
 	if (auto === 0) {
 		auto = 1;
 		button.innerHTML = "Auto-preview Off";
-		html.oninput = "";
-		css.oninput = "";
-		javascript.oninput = "";
 	} else if (auto === 1) {
 		auto = 0;
 		button.innerHTML = "Auto-preview On";
-		html.oninput = preview();
-		css.oninput = preview();
-		javascript.oninput = preview();
 	}
 	preview();
 }
