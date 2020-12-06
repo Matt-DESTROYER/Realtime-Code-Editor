@@ -23,6 +23,7 @@ body {
 	height: 33.33%;
 	font-size: 18px;
 	padding: 10px;
+	background-color: lightgray;
 }
 
 .preview-area {
@@ -46,6 +47,7 @@ body {
 	color: #fff;
 	background-color: #4CAF50;
 	border: none;
+	height: 30px;
 }
 
 .button:hover {
