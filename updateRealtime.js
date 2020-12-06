@@ -1,7 +1,3 @@
-function get(id) {
-	return document.getElementById(id);
-}
-
 // Update preview
 function preview() {
 	if (auto === 0) {
