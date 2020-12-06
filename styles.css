@@ -11,9 +11,9 @@ body {
 
 .code-area {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	width: 50%;
-	border-right:1px solid #555;
+	border-right: 1px solid #555;
 }
 
 .code-area textarea {
