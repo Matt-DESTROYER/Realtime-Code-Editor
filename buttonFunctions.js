@@ -1,8 +1,5 @@
 // Initialise
 let auto = 0;
-function get(id) {
-	return document.getElementById(id);
-}
 
 // Turn autosave on/off
 function autosave() {
