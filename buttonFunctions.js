@@ -24,7 +24,7 @@ function save() {
 	
 	// Download file
 	let element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file));
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file));
 	element.setAttribute('download', "index.html");
 	element.style.display = 'none';
 	document.body.appendChild(element);
