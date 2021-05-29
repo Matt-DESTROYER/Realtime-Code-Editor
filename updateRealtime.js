@@ -4,10 +4,10 @@ function preview() {
 		let html = get("html").value;
 		let css = "<style>" + get("css").value + "</style>";
 		let javascript = "<script>" + get("javascript").value + "</script>";
-		let frame = get("preview-window").contentWindow.document;
-		frame.src = "about:blank";
-		frame.open();
-		frame.write(html + css + javascript);
-		frame.close();
+		let iframe = get("preview-window").contentWindow.document;
+		get("preview-window").src = "about:blank";
+		iframe.open();
+		iframe.write(html + css + javascript);
+		iframe.close();
 	}
 }
