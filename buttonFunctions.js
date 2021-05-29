@@ -20,7 +20,18 @@ function save() {
 	let html = get("html").value;
 	let css = get("css").value;
 	let javascript = get("javascript").value;
-	let file =  "<!doctype html><html><head><meta charset=\"utf-8\"><title>HTML</title><style>" + css + "</style></head><body>" + html + "</body><script>" + javascript + "</script></html>";
+	let file =  `<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>HTML</title>
+			<style>${css}</style>
+			<script type="text/javascript" defer>${javascript}</script>
+		</head>
+		<body>
+			${html}
+		</body>
+	</html>`;
 	
 	// Download file
 	let element = document.createElement('a');
